@@ -1,0 +1,11 @@
+[Unit]
+Description=Massa metrics exporter
+After=network-online.target
+[Service]
+User=root
+ExecStart=/usr/bin/massa_script_exporter -config.file /root/script_exporter/config/config.yaml
+Restart=on-failure
+RestartSec=3
+LimitNOFILE=65535
+[Install]
+WantedBy=multi-user.target
