@@ -2077,402 +2077,6 @@
         "type": "prometheus",
         "uid": "da74e314-ab7d-49c2-bbdd-44b4d1477a3d"
       },
-      "description": "Number of incoming connections",
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "thresholds"
-          },
-          "mappings": [
-            {
-              "options": {
-                "match": "null",
-                "result": {
-                  "text": "N/A"
-                }
-              },
-              "type": "special"
-            }
-          ],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "red",
-                "value": null
-              },
-              {
-                "color": "rgba(237, 129, 40, 0.89)",
-                "value": 1
-              },
-              {
-                "color": "green",
-                "value": 2
-              }
-            ]
-          },
-          "unit": "none"
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 8,
-        "w": 3,
-        "x": 0,
-        "y": 25
-      },
-      "id": 27,
-      "links": [],
-      "maxDataPoints": 100,
-      "options": {
-        "colorMode": "value",
-        "graphMode": "none",
-        "justifyMode": "auto",
-        "orientation": "horizontal",
-        "reduceOptions": {
-          "calcs": [
-            "mean"
-          ],
-          "fields": "",
-          "values": false
-        },
-        "text": {},
-        "textMode": "auto",
-        "wideLayout": true
-      },
-      "pluginVersion": "10.2.3",
-      "targets": [
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "da74e314-ab7d-49c2-bbdd-44b4d1477a3d"
-          },
-          "editorMode": "code",
-          "exemplar": false,
-          "expr": "in_connections{job=\"massa-client\"}",
-          "format": "time_series",
-          "hide": false,
-          "instant": true,
-          "interval": "",
-          "intervalFactor": 1,
-          "legendFormat": "",
-          "refId": "A"
-        }
-      ],
-      "title": "In connections",
-      "type": "stat"
-    },
-    {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "da74e314-ab7d-49c2-bbdd-44b4d1477a3d"
-      },
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "palette-classic"
-          },
-          "custom": {
-            "axisBorderShow": false,
-            "axisCenteredZero": false,
-            "axisColorMode": "text",
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "drawStyle": "line",
-            "fillOpacity": 0,
-            "gradientMode": "none",
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            },
-            "insertNulls": false,
-            "lineInterpolation": "linear",
-            "lineStyle": {
-              "fill": "solid"
-            },
-            "lineWidth": 1,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "auto",
-            "spanNulls": false,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          }
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 8,
-        "w": 9,
-        "x": 3,
-        "y": 25
-      },
-      "id": 114,
-      "options": {
-        "legend": {
-          "calcs": [
-            "mean"
-          ],
-          "displayMode": "table",
-          "placement": "bottom",
-          "showLegend": true,
-          "sortBy": "Name",
-          "sortDesc": false
-        },
-        "tooltip": {
-          "mode": "single",
-          "sort": "none"
-        }
-      },
-      "pluginVersion": "10.2.3",
-      "targets": [
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "da74e314-ab7d-49c2-bbdd-44b4d1477a3d"
-          },
-          "disableTextWrap": false,
-          "editorMode": "code",
-          "exemplar": false,
-          "expr": "in_connections{job=\"massa-client\"}",
-          "fullMetaSearch": false,
-          "includeNullMetadata": true,
-          "instant": false,
-          "legendFormat": "Nodes",
-          "range": true,
-          "refId": "A",
-          "useBackend": false
-        }
-      ],
-      "title": "In connections",
-      "type": "timeseries"
-    },
-    {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "da74e314-ab7d-49c2-bbdd-44b4d1477a3d"
-      },
-      "description": "Number of outgoing connections",
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "thresholds"
-          },
-          "mappings": [
-            {
-              "options": {
-                "match": "null",
-                "result": {
-                  "text": "N/A"
-                }
-              },
-              "type": "special"
-            }
-          ],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "red",
-                "value": null
-              },
-              {
-                "color": "rgba(237, 129, 40, 0.89)",
-                "value": 1
-              },
-              {
-                "color": "green",
-                "value": 2
-              }
-            ]
-          },
-          "unit": "none"
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 8,
-        "w": 3,
-        "x": 12,
-        "y": 25
-      },
-      "id": 103,
-      "links": [],
-      "maxDataPoints": 100,
-      "options": {
-        "colorMode": "value",
-        "graphMode": "none",
-        "justifyMode": "auto",
-        "orientation": "horizontal",
-        "reduceOptions": {
-          "calcs": [
-            "mean"
-          ],
-          "fields": "",
-          "values": false
-        },
-        "text": {},
-        "textMode": "auto",
-        "wideLayout": true
-      },
-      "pluginVersion": "10.2.3",
-      "targets": [
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "da74e314-ab7d-49c2-bbdd-44b4d1477a3d"
-          },
-          "editorMode": "code",
-          "exemplar": false,
-          "expr": "out_connections{job=\"massa-client\"}",
-          "format": "time_series",
-          "hide": false,
-          "instant": true,
-          "interval": "",
-          "intervalFactor": 1,
-          "legendFormat": "",
-          "refId": "A"
-        }
-      ],
-      "title": "Out connections",
-      "type": "stat"
-    },
-    {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "da74e314-ab7d-49c2-bbdd-44b4d1477a3d"
-      },
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "palette-classic"
-          },
-          "custom": {
-            "axisBorderShow": false,
-            "axisCenteredZero": false,
-            "axisColorMode": "text",
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "drawStyle": "line",
-            "fillOpacity": 0,
-            "gradientMode": "none",
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            },
-            "insertNulls": false,
-            "lineInterpolation": "linear",
-            "lineStyle": {
-              "fill": "solid"
-            },
-            "lineWidth": 1,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "auto",
-            "spanNulls": false,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          }
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 8,
-        "w": 9,
-        "x": 15,
-        "y": 25
-      },
-      "id": 127,
-      "options": {
-        "legend": {
-          "calcs": [
-            "mean"
-          ],
-          "displayMode": "table",
-          "placement": "bottom",
-          "showLegend": true,
-          "sortBy": "Name",
-          "sortDesc": false
-        },
-        "tooltip": {
-          "mode": "single",
-          "sort": "none"
-        }
-      },
-      "pluginVersion": "10.2.3",
-      "targets": [
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "da74e314-ab7d-49c2-bbdd-44b4d1477a3d"
-          },
-          "disableTextWrap": false,
-          "editorMode": "code",
-          "exemplar": false,
-          "expr": "out_connections{job=\"massa-client\"}",
-          "fullMetaSearch": false,
-          "includeNullMetadata": true,
-          "instant": false,
-          "legendFormat": "Nodes",
-          "range": true,
-          "refId": "A",
-          "useBackend": false
-        }
-      ],
-      "title": "Out connections",
-      "type": "timeseries"
-    },
-    {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "da74e314-ab7d-49c2-bbdd-44b4d1477a3d"
-      },
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -2507,7 +2111,7 @@
         "h": 8,
         "w": 3,
         "x": 0,
-        "y": 33
+        "y": 25
       },
       "id": 112,
       "links": [],
@@ -2616,7 +2220,7 @@
         "h": 8,
         "w": 9,
         "x": 3,
-        "y": 33
+        "y": 25
       },
       "id": 113,
       "options": {
@@ -2695,7 +2299,7 @@
         "h": 8,
         "w": 3,
         "x": 12,
-        "y": 33
+        "y": 25
       },
       "id": 130,
       "links": [],
@@ -2804,7 +2408,7 @@
         "h": 8,
         "w": 9,
         "x": 15,
-        "y": 33
+        "y": 25
       },
       "id": 131,
       "options": {
@@ -2842,6 +2446,402 @@
         }
       ],
       "title": "Number of rolls",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "da74e314-ab7d-49c2-bbdd-44b4d1477a3d"
+      },
+      "description": "Number of incoming connections",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [
+            {
+              "options": {
+                "match": "null",
+                "result": {
+                  "text": "N/A"
+                }
+              },
+              "type": "special"
+            }
+          ],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "red",
+                "value": null
+              },
+              {
+                "color": "rgba(237, 129, 40, 0.89)",
+                "value": 1
+              },
+              {
+                "color": "green",
+                "value": 2
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 3,
+        "x": 0,
+        "y": 33
+      },
+      "id": 27,
+      "links": [],
+      "maxDataPoints": 100,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "mean"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {},
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "10.2.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "da74e314-ab7d-49c2-bbdd-44b4d1477a3d"
+          },
+          "editorMode": "code",
+          "exemplar": false,
+          "expr": "in_connections{job=\"massa-client\"}",
+          "format": "time_series",
+          "hide": false,
+          "instant": true,
+          "interval": "",
+          "intervalFactor": 1,
+          "legendFormat": "",
+          "refId": "A"
+        }
+      ],
+      "title": "In connections",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "da74e314-ab7d-49c2-bbdd-44b4d1477a3d"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "insertNulls": false,
+            "lineInterpolation": "linear",
+            "lineStyle": {
+              "fill": "solid"
+            },
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 9,
+        "x": 3,
+        "y": 33
+      },
+      "id": 114,
+      "options": {
+        "legend": {
+          "calcs": [
+            "mean"
+          ],
+          "displayMode": "table",
+          "placement": "bottom",
+          "showLegend": true,
+          "sortBy": "Name",
+          "sortDesc": false
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "10.2.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "da74e314-ab7d-49c2-bbdd-44b4d1477a3d"
+          },
+          "disableTextWrap": false,
+          "editorMode": "code",
+          "exemplar": false,
+          "expr": "in_connections{job=\"massa-client\"}",
+          "fullMetaSearch": false,
+          "includeNullMetadata": true,
+          "instant": false,
+          "legendFormat": "Nodes",
+          "range": true,
+          "refId": "A",
+          "useBackend": false
+        }
+      ],
+      "title": "In connections",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "da74e314-ab7d-49c2-bbdd-44b4d1477a3d"
+      },
+      "description": "Number of outgoing connections",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [
+            {
+              "options": {
+                "match": "null",
+                "result": {
+                  "text": "N/A"
+                }
+              },
+              "type": "special"
+            }
+          ],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "red",
+                "value": null
+              },
+              {
+                "color": "rgba(237, 129, 40, 0.89)",
+                "value": 1
+              },
+              {
+                "color": "green",
+                "value": 2
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 3,
+        "x": 12,
+        "y": 33
+      },
+      "id": 103,
+      "links": [],
+      "maxDataPoints": 100,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "mean"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {},
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "10.2.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "da74e314-ab7d-49c2-bbdd-44b4d1477a3d"
+          },
+          "editorMode": "code",
+          "exemplar": false,
+          "expr": "out_connections{job=\"massa-client\"}",
+          "format": "time_series",
+          "hide": false,
+          "instant": true,
+          "interval": "",
+          "intervalFactor": 1,
+          "legendFormat": "",
+          "refId": "A"
+        }
+      ],
+      "title": "Out connections",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "da74e314-ab7d-49c2-bbdd-44b4d1477a3d"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "insertNulls": false,
+            "lineInterpolation": "linear",
+            "lineStyle": {
+              "fill": "solid"
+            },
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 9,
+        "x": 15,
+        "y": 33
+      },
+      "id": 127,
+      "options": {
+        "legend": {
+          "calcs": [
+            "mean"
+          ],
+          "displayMode": "table",
+          "placement": "bottom",
+          "showLegend": true,
+          "sortBy": "Name",
+          "sortDesc": false
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "10.2.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "da74e314-ab7d-49c2-bbdd-44b4d1477a3d"
+          },
+          "disableTextWrap": false,
+          "editorMode": "code",
+          "exemplar": false,
+          "expr": "out_connections{job=\"massa-client\"}",
+          "fullMetaSearch": false,
+          "includeNullMetadata": true,
+          "instant": false,
+          "legendFormat": "Nodes",
+          "range": true,
+          "refId": "A",
+          "useBackend": false
+        }
+      ],
+      "title": "Out connections",
       "type": "timeseries"
     },
     {
@@ -4661,6 +4661,6 @@
   "timezone": "",
   "title": "Massa",
   "uid": "Massa",
-  "version": 22,
+  "version": 23,
   "weekStart": ""
 }
