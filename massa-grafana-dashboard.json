@@ -2141,7 +2141,7 @@
           },
           "editorMode": "code",
           "exemplar": false,
-          "expr": "protocol_known_peers{job=\"massa-node\"}",
+          "expr": "stakers{job=\"massa-node\"}",
           "format": "time_series",
           "hide": false,
           "instant": true,
@@ -2247,7 +2247,7 @@
           "disableTextWrap": false,
           "editorMode": "code",
           "exemplar": false,
-          "expr": "protocol_known_peers{job=\"massa-node\"}",
+          "expr": "stakers{job=\"massa-node\"}",
           "fullMetaSearch": false,
           "includeNullMetadata": true,
           "instant": false,
@@ -4661,6 +4661,6 @@
   "timezone": "",
   "title": "Massa",
   "uid": "Massa",
-  "version": 23,
+  "version": 24,
   "weekStart": ""
 }
