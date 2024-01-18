@@ -924,7 +924,7 @@
         "x": 0,
         "y": 9
       },
-      "id": 106,
+      "id": 111,
       "links": [],
       "maxDataPoints": 100,
       "options": {
@@ -952,7 +952,7 @@
           },
           "editorMode": "code",
           "exemplar": false,
-          "expr": "current_cycle{job=\"massa-client\"}",
+          "expr": "block_reward{job=\"massa-client\"}",
           "format": "time_series",
           "hide": false,
           "instant": true,
@@ -962,7 +962,7 @@
           "refId": "A"
         }
       ],
-      "title": "Current cycle",
+      "title": "Block reward",
       "type": "stat"
     },
     {
@@ -1442,7 +1442,7 @@
         "x": 0,
         "y": 13
       },
-      "id": 111,
+      "id": 37,
       "links": [],
       "maxDataPoints": 100,
       "options": {
@@ -1470,7 +1470,7 @@
           },
           "editorMode": "code",
           "exemplar": false,
-          "expr": "block_reward{job=\"massa-client\"}",
+          "expr": "active_cursor_period{job=\"massa-node\"}",
           "format": "time_series",
           "hide": false,
           "instant": true,
@@ -1480,7 +1480,7 @@
           "refId": "A"
         }
       ],
-      "title": "Block reward",
+      "title": "Current period",
       "type": "stat"
     },
     {
@@ -1643,7 +1643,7 @@
         "x": 19,
         "y": 13
       },
-      "id": 37,
+      "id": 106,
       "links": [],
       "maxDataPoints": 100,
       "options": {
@@ -1671,7 +1671,7 @@
           },
           "editorMode": "code",
           "exemplar": false,
-          "expr": "active_cursor_period{job=\"massa-node\"}",
+          "expr": "current_cycle{job=\"massa-client\"}",
           "format": "time_series",
           "hide": false,
           "instant": true,
@@ -1681,7 +1681,7 @@
           "refId": "A"
         }
       ],
-      "title": "Current period",
+      "title": "Current cycle",
       "type": "stat"
     },
     {
@@ -4273,6 +4273,6 @@
   "timezone": "",
   "title": "Massa",
   "uid": "Massa",
-  "version": 19,
+  "version": 20,
   "weekStart": ""
 }
