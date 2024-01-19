@@ -1692,6 +1692,390 @@
       "description": "",
       "fieldConfig": {
         "defaults": {
+          "fieldMinMax": false,
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "orange",
+                "value": 1
+              },
+              {
+                "color": "green",
+                "value": 145000
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Tokens"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "mode": "thresholds"
+                }
+              },
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "green",
+                      "value": null
+                    },
+                    {
+                      "color": "transparent",
+                      "value": 222
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 8,
+        "x": 0,
+        "y": 17
+      },
+      "id": 132,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {},
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "10.2.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "da74e314-ab7d-49c2-bbdd-44b4d1477a3d"
+          },
+          "editorMode": "code",
+          "expr": "active_cursor_period{job=\"massa-node\"}",
+          "instant": false,
+          "legendFormat": "Current period",
+          "range": true,
+          "refId": "A"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "da74e314-ab7d-49c2-bbdd-44b4d1477a3d"
+          },
+          "editorMode": "code",
+          "expr": "145987",
+          "hide": false,
+          "instant": false,
+          "legendFormat": "Unlock period",
+          "range": true,
+          "refId": "B"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "da74e314-ab7d-49c2-bbdd-44b4d1477a3d"
+          },
+          "editorMode": "code",
+          "expr": "222",
+          "hide": false,
+          "instant": false,
+          "legendFormat": "Tokens",
+          "range": true,
+          "refId": "C"
+        }
+      ],
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "da74e314-ab7d-49c2-bbdd-44b4d1477a3d"
+      },
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "fieldMinMax": false,
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "orange",
+                "value": 1
+              },
+              {
+                "color": "green",
+                "value": 261561
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Tokens"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "mode": "thresholds"
+                }
+              },
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "green",
+                      "value": null
+                    },
+                    {
+                      "color": "transparent",
+                      "value": 222
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 8,
+        "x": 8,
+        "y": 17
+      },
+      "id": 133,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {},
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "10.2.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "da74e314-ab7d-49c2-bbdd-44b4d1477a3d"
+          },
+          "editorMode": "code",
+          "expr": "active_cursor_period{job=\"massa-node\"}",
+          "instant": false,
+          "legendFormat": "Current period",
+          "range": true,
+          "refId": "A"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "da74e314-ab7d-49c2-bbdd-44b4d1477a3d"
+          },
+          "editorMode": "code",
+          "expr": "261561",
+          "hide": false,
+          "instant": false,
+          "legendFormat": "Unlock period",
+          "range": true,
+          "refId": "B"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "da74e314-ab7d-49c2-bbdd-44b4d1477a3d"
+          },
+          "editorMode": "code",
+          "expr": "222",
+          "hide": false,
+          "instant": false,
+          "legendFormat": "Tokens",
+          "range": true,
+          "refId": "C"
+        }
+      ],
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "da74e314-ab7d-49c2-bbdd-44b4d1477a3d"
+      },
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "fieldMinMax": false,
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "orange",
+                "value": 1
+              },
+              {
+                "color": "green",
+                "value": 415666
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Tokens"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "mode": "thresholds"
+                }
+              },
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "green",
+                      "value": null
+                    },
+                    {
+                      "color": "transparent",
+                      "value": 222
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 8,
+        "x": 16,
+        "y": 17
+      },
+      "id": 134,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {},
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "10.2.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "da74e314-ab7d-49c2-bbdd-44b4d1477a3d"
+          },
+          "editorMode": "code",
+          "expr": "active_cursor_period{job=\"massa-node\"}",
+          "instant": false,
+          "legendFormat": "Current period",
+          "range": true,
+          "refId": "A"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "da74e314-ab7d-49c2-bbdd-44b4d1477a3d"
+          },
+          "editorMode": "code",
+          "expr": "415666",
+          "hide": false,
+          "instant": false,
+          "legendFormat": "Unlock period",
+          "range": true,
+          "refId": "B"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "da74e314-ab7d-49c2-bbdd-44b4d1477a3d"
+          },
+          "editorMode": "code",
+          "expr": "222",
+          "hide": false,
+          "instant": false,
+          "legendFormat": "Tokens",
+          "range": true,
+          "refId": "C"
+        }
+      ],
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "da74e314-ab7d-49c2-bbdd-44b4d1477a3d"
+      },
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
           "color": {
             "mode": "thresholds"
           },
@@ -1723,7 +2107,7 @@
         "h": 8,
         "w": 3,
         "x": 0,
-        "y": 17
+        "y": 21
       },
       "id": 109,
       "links": [],
@@ -1832,7 +2216,7 @@
         "h": 8,
         "w": 9,
         "x": 3,
-        "y": 17
+        "y": 21
       },
       "id": 110,
       "options": {
@@ -1911,7 +2295,7 @@
         "h": 8,
         "w": 3,
         "x": 12,
-        "y": 17
+        "y": 21
       },
       "hideTimeOverride": false,
       "id": 128,
@@ -2030,7 +2414,7 @@
         "h": 8,
         "w": 9,
         "x": 15,
-        "y": 17
+        "y": 21
       },
       "hideTimeOverride": false,
       "id": 129,
@@ -2111,7 +2495,7 @@
         "h": 8,
         "w": 3,
         "x": 0,
-        "y": 25
+        "y": 29
       },
       "id": 112,
       "links": [],
@@ -2220,7 +2604,7 @@
         "h": 8,
         "w": 9,
         "x": 3,
-        "y": 25
+        "y": 29
       },
       "id": 113,
       "options": {
@@ -2299,7 +2683,7 @@
         "h": 8,
         "w": 3,
         "x": 12,
-        "y": 25
+        "y": 29
       },
       "id": 130,
       "links": [],
@@ -2408,7 +2792,7 @@
         "h": 8,
         "w": 9,
         "x": 15,
-        "y": 25
+        "y": 29
       },
       "id": 131,
       "options": {
@@ -2495,7 +2879,7 @@
         "h": 8,
         "w": 3,
         "x": 0,
-        "y": 33
+        "y": 37
       },
       "id": 27,
       "links": [],
@@ -2604,7 +2988,7 @@
         "h": 8,
         "w": 9,
         "x": 3,
-        "y": 33
+        "y": 37
       },
       "id": 114,
       "options": {
@@ -2693,7 +3077,7 @@
         "h": 8,
         "w": 3,
         "x": 12,
-        "y": 33
+        "y": 37
       },
       "id": 103,
       "links": [],
@@ -2802,7 +3186,7 @@
         "h": 8,
         "w": 9,
         "x": 15,
-        "y": 33
+        "y": 37
       },
       "id": 127,
       "options": {
@@ -2854,7 +3238,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 41
+        "y": 45
       },
       "id": 63,
       "panels": [],
@@ -2915,7 +3299,7 @@
         "h": 5,
         "w": 2,
         "x": 0,
-        "y": 42
+        "y": 46
       },
       "hideTimeOverride": true,
       "id": 65,
@@ -3007,7 +3391,7 @@
         "h": 2,
         "w": 2,
         "x": 2,
-        "y": 42
+        "y": 46
       },
       "id": 67,
       "links": [],
@@ -3089,7 +3473,7 @@
         "h": 5,
         "w": 9,
         "x": 4,
-        "y": 42
+        "y": 46
       },
       "id": 71,
       "interval": "",
@@ -3224,7 +3608,7 @@
         "h": 5,
         "w": 3,
         "x": 13,
-        "y": 42
+        "y": 46
       },
       "hideTimeOverride": false,
       "id": 73,
@@ -3276,7 +3660,7 @@
         "h": 5,
         "w": 8,
         "x": 16,
-        "y": 42
+        "y": 46
       },
       "id": 75,
       "links": [],
@@ -3512,7 +3896,7 @@
         "h": 3,
         "w": 2,
         "x": 2,
-        "y": 44
+        "y": 48
       },
       "id": 69,
       "links": [],
@@ -3576,7 +3960,7 @@
         "h": 11,
         "w": 13,
         "x": 0,
-        "y": 47
+        "y": 51
       },
       "hiddenSeries": false,
       "id": 77,
@@ -3771,7 +4155,7 @@
         "h": 11,
         "w": 11,
         "x": 13,
-        "y": 47
+        "y": 51
       },
       "hiddenSeries": false,
       "id": 79,
@@ -3950,7 +4334,7 @@
         "h": 8,
         "w": 8,
         "x": 0,
-        "y": 58
+        "y": 62
       },
       "height": "300",
       "hiddenSeries": false,
@@ -4084,7 +4468,7 @@
         "h": 8,
         "w": 8,
         "x": 8,
-        "y": 58
+        "y": 62
       },
       "height": "300",
       "hiddenSeries": false,
@@ -4206,7 +4590,7 @@
         "h": 8,
         "w": 8,
         "x": 16,
-        "y": 58
+        "y": 62
       },
       "height": "300",
       "hiddenSeries": false,
@@ -4350,7 +4734,7 @@
         "h": 9,
         "w": 12,
         "x": 0,
-        "y": 66
+        "y": 70
       },
       "height": "300",
       "hiddenSeries": false,
@@ -4468,7 +4852,7 @@
         "h": 9,
         "w": 12,
         "x": 12,
-        "y": 66
+        "y": 70
       },
       "height": "300",
       "hiddenSeries": false,
@@ -4661,6 +5045,6 @@
   "timezone": "",
   "title": "Massa",
   "uid": "Massa",
-  "version": 24,
+  "version": 25,
   "weekStart": ""
 }
